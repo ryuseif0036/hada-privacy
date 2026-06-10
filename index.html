@@ -3,74 +3,98 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>プライバシーポリシー｜Hada（肌予報）</title>
-<meta name="description" content="肌予報アプリ「Hada」のプライバシーポリシー。健康データは端末内で処理し、第三者に送信しません。">
+<title>Hada（肌予報）— スマホだけで、今日の肌コンディションを予報</title>
+<meta name="description" content="Hadaは、スマホのカメラで測る自律神経(HRV)と睡眠などから、その日の肌コンディションを予報し、ケアの目安を提案する肌コンディショニングアプリです。">
 <style>
-  :root { --ink:#1F2A25; --sub:#5D6B64; --teal:#2F7668; --line:#DDE6E0; --bg:#FAF7F2; }
+  :root { --ink:#1F2A25; --sub:#5D6B64; --teal:#2F7668; --deep:#185449; --line:#DDE6E0; --bg:#FAF7F2; --mint:#7FB89E; --sage:#B5E0D0; }
   * { box-sizing:border-box; }
   body { margin:0; background:var(--bg); color:var(--ink);
-    font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif;
-    line-height:1.8; }
-  .wrap { max-width:720px; margin:0 auto; padding:40px 20px 64px; }
-  header { border-bottom:1px solid var(--line); padding-bottom:20px; margin-bottom:28px; }
-  h1 { font-size:1.6rem; margin:0 0 6px; color:#185449; }
-  .meta { color:var(--sub); font-size:.9rem; }
-  h2 { font-size:1.15rem; color:var(--teal); margin:30px 0 8px; }
+    font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif; line-height:1.85; }
+  .wrap { max-width:760px; margin:0 auto; padding:0 20px 64px; }
+  .hero { background:linear-gradient(135deg,var(--sage),var(--mint)); color:#10302a;
+    border-radius:0 0 28px 28px; padding:52px 24px 40px; text-align:center; }
+  .badge { display:inline-block; background:rgba(255,255,255,.6); color:#10302a; font-size:.8rem;
+    padding:4px 12px; border-radius:999px; margin-bottom:14px; }
+  .hero h1 { font-size:2rem; margin:.2em 0; color:#0f2c26; }
+  .hero p { font-size:1.05rem; margin:.4em auto 0; max-width:540px; }
+  .section { margin:34px 0; }
+  h2 { font-size:1.25rem; color:var(--teal); margin:28px 0 10px; }
+  h3 { font-size:1.02rem; color:var(--deep); margin:18px 0 4px; }
   p, li { font-size:1rem; }
-  ul { padding-left:1.2em; }
+  .cards { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:14px; padding:16px; }
+  .card b { color:var(--deep); }
+  ol.flow { padding-left:1.2em; }
+  ol.flow li { margin:6px 0; }
   .note { background:#F1F6F4; border:1px solid var(--line); border-radius:12px; padding:14px 16px; color:var(--sub); font-size:.92rem; }
-  footer { margin-top:40px; padding-top:16px; border-top:1px solid var(--line); color:var(--sub); font-size:.85rem; }
+  .dl { background:#fff; border:1px solid var(--line); border-radius:16px; padding:18px 18px; margin-top:20px; }
+  .dl .pill { display:inline-block; background:var(--mint); color:#fff; font-weight:600; padding:8px 18px; border-radius:999px; }
   a { color:var(--teal); }
+  footer { margin-top:40px; padding-top:16px; border-top:1px solid var(--line); color:var(--sub); font-size:.85rem; text-align:center; }
+  @media (max-width:520px){ .cards{ grid-template-columns:1fr; } .hero h1{ font-size:1.6rem; } }
 </style>
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <h1>プライバシーポリシー</h1>
-    <div class="meta">肌予報アプリ「Hada」　最終更新日: 2026年6月10日</div>
-  </header>
+  <div class="hero">
+    <div class="badge">肌コンディショニング・アプリ</div>
+    <h1>Hada — 肌予報</h1>
+    <p>スマホだけで、今日の肌コンディションを「予報」。<br>朝の2分で、今日のケアの目安がわかる。</p>
+  </div>
 
-  <p>「Hada」（以下「本アプリ」）は、利用者のプライバシーを最優先に設計しています。本ポリシーは、本アプリが扱うデータとその取り扱い方針を説明します。</p>
+  <div class="wrap">
+    <!-- 冒頭：このアプリは何か -->
+    <div class="section">
+      <h2>このアプリは何？</h2>
+      <p>Hadaは、肌そのものより先に「荒れの予兆」が出る<b>体の内側のサイン</b>を毎朝はかり、その日の<b>肌コンディションを予報</b>して、今日のケアの目安を提案する肌コンディショニング・アプリです。<b>スマートウォッチは不要</b>。スマホのカメラとかんたんな入力だけで始められ、使うほど<b>あなた専用の傾向</b>を見つけます。</p>
+      <div class="note">医療機器ではありません。表示はすべて日々のコンディションの「目安・傾向」です。</div>
+    </div>
 
-  <h2>1. 基本方針：オンデバイス処理</h2>
-  <p>本アプリで扱うすべての健康関連データ・計測データは、お使いの端末内でのみ処理・保存されます。本アプリは、これらのデータを開発者や第三者のサーバーに送信しません。アカウント登録も不要です。</p>
-  <p>iCloud同期を有効にした場合、データはお客様自身のApple ID（プライベートiCloud）にのみ保存・同期され、開発者はその内容にアクセスできません。</p>
+    <!-- ダウンロード/入手の案内（冒頭で説明） -->
+    <div class="dl">
+      <h3 style="margin-top:0">使ってみるには</h3>
+      <p>現在 <b>TestFlight でベータ提供の準備中</b>です。配信開始後、このページからインストール手順をご案内します。</p>
+      <span class="pill">準備中 — まもなく</span>
+    </div>
 
-  <h2>2. 取り扱うデータ</h2>
-  <ul>
-    <li><b>カメラ映像（PPG計測）</b>：指先をカメラに当てて心拍・心拍変動(HRV)の目安を計測するために使用します。映像はリアルタイムに端末内で数値化され、保存・送信されません。算出された数値（心拍・HRV）のみ端末内に記録されます。</li>
-    <li><b>手入力データ</b>：睡眠時間・体調メモ・運動・肌記録など、利用者が入力した情報。端末内にのみ保存されます。</li>
-    <li><b>ヘルスケア（HealthKit）データ（任意）</b>：利用者が連携を許可した場合のみ、睡眠・心拍変動・安静時心拍・手首皮膚温・月経周期などを読み取り専用で取得します。本アプリがヘルスケアにデータを書き込むことはありません。取得したデータは端末内処理に限定し、外部送信しません。</li>
-  </ul>
+    <div class="section">
+      <h2>主な機能</h2>
+      <div class="cards">
+        <div class="card"><b>① カメラで自律神経を計測</b><br>指先をカメラに当てて30秒。心拍・心拍変動(HRV)から自律神経スコアを「見える化」。</div>
+        <div class="card"><b>② 今日の肌予報</b><br>あなたの平常比で、好調／標準／敏感／要注意を予報。初日から表示、使うほど精度UP。</div>
+        <div class="card"><b>③ 今日のケア＆ルーチン</b><br>予報に合わせて、鎮静・保湿など今日のケアと朝夜のルーチンを提案。</div>
+        <div class="card"><b>④ あなた専用の発見</b><br>記録を続けると「寝不足の翌日は敏感になりやすい」など、あなたの傾向を学習。</div>
+      </div>
+    </div>
 
-  <h2>3. 利用目的</h2>
-  <p>取得・入力されたデータは、その日の肌コンディションの「予報」「傾向」「ケアの目安」の算出、および利用者自身による予報の答え合わせ（的中率・個人傾向の発見）のためにのみ使用します。</p>
+    <div class="section">
+      <h2>測るもの（体の4つのサイン）</h2>
+      <p>A 自律神経（HRV）／ B 回復（睡眠・安静時心拍）／ C 皮膚温（任意・ウェアラブル連携時）／ D 月経周期。スマホだけで A・B が取れ、Apple Watch等があれば C なども任意で加わります。</p>
+    </div>
 
-  <h2>4. 第三者提供・広告・解析</h2>
-  <ul>
-    <li>本アプリはデータを第三者へ提供・販売しません。</li>
-    <li>広告ネットワーク・第三者解析SDKによる行動追跡は行いません。</li>
-    <li>HealthKitから取得したデータを広告・マーケティング目的で使用しません（Appleの規約に準拠）。</li>
-  </ul>
+    <div class="section">
+      <h2>毎日の使い方</h2>
+      <ol class="flow">
+        <li>朝、カメラで30秒計測（自律神経・心拍）</li>
+        <li>睡眠時間を入力（体調・運動はお好みで）</li>
+        <li>今日の肌予報とケア・ルーチンを確認</li>
+        <li>夜、実際の肌を記録 → 予報の「答え合わせ」で精度が育つ</li>
+      </ol>
+    </div>
 
-  <h2>5. データの保存と削除</h2>
-  <p>データは端末内（およびiCloud同期を有効にした場合はお客様のiCloud）に保存されます。アプリを削除すると端末内のデータは削除されます。iCloud上のデータは設定アプリのiCloud管理から削除できます。</p>
+    <div class="section">
+      <h2>プライバシー</h2>
+      <p>健康データ・カメラ映像は<b>端末内で処理</b>し、第三者に送信しません。iCloud同期はお客様自身のApple ID内のみ。ヘルスケア連携は任意・読み取り専用です。詳しくは <a href="./privacy.html">プライバシーポリシー</a> をご覧ください。</p>
+    </div>
 
-  <h2>6. 医療に関する注意</h2>
-  <p>本アプリは医療機器ではなく、診断・治療を目的としません。提供する内容は日々のコンディションの「目安」であり、医療上の判断は専門家にご相談ください。</p>
+    <div class="section">
+      <h2>科学的根拠について</h2>
+      <p>睡眠・自律神経・周期と肌の関係は研究で支持されています（例：睡眠不足とバリア機能の低下など）。一方で「その数値があなたの肌をどれだけ予測するか」は人それぞれのため、Hadaは断定せず<b>「予報・目安」</b>とし、的中率であなた自身が検証できる設計です。</p>
+    </div>
 
-  <h2>7. 子どものプライバシー</h2>
-  <p>本アプリは13歳未満の利用者を対象としていません。</p>
-
-  <h2>8. 改定</h2>
-  <p>本ポリシーは必要に応じて改定されることがあります。重要な変更がある場合はアプリ内で告知します。</p>
-
-  <h2>9. お問い合わせ</h2>
-  <p>本ポリシーに関するお問い合わせは、App Store の本アプリ開発者ページに記載の連絡先までご連絡ください。</p>
-
-  <div class="note">本アプリは個人開発のプロジェクトです。健康データは端末内またはお客様自身のiCloudでのみ取り扱い、第三者には提供しません。</div>
-
-  <footer>© 2026 Hada. All rights reserved.</footer>
-</div>
+    <footer>
+      © 2026 Hada ・ <a href="./privacy.html">プライバシーポリシー</a><br>
+      本アプリは個人開発のプロジェクトです。医療助言ではありません。
+    </footer>
+  </div>
 </body>
 </html>
